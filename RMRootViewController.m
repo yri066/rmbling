@@ -140,7 +140,7 @@
 			/* No manager - create new one */
 			mgr = [[NETunnelProviderManager alloc] init];
 			prot = [[NETunnelProviderProtocol alloc] init];
-			prot.providerBundleIdentifier = @"com.rpcsx.rumble.ext";
+			prot.providerBundleIdentifier = [[[NSBundle mainBundle] bundleIdentifier] stringByAppendingString:@".ext"];
 			prot.serverAddress = @"localhost";
 			mgr.protocolConfiguration = prot;
 
