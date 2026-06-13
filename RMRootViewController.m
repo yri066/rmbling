@@ -183,7 +183,7 @@
 		      NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 		      NSDictionary * options = @{
 			      @"Args": [RMRootViewController shellSplit:
-			[@"ciadpi -i ::1 -p 8080 -x 2 " stringByAppendingString:[defaults objectForKey:@"Args"]]],
+			[@"ciadpi -i ::1 -p 8080 " stringByAppendingString:[defaults objectForKey:@"Args"]]],
 			      @"IPv6": [NSNumber numberWithBool:[defaults boolForKey:@"IPv6"]],
 			      @"DNSServer": [defaults objectForKey:@"DNSServer"],
 		      };
