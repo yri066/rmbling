@@ -99,7 +99,8 @@ byedpi_CFLAGS := \
 		 -Wno-unused-variable \
 		 -Wno-unused-function \
 		 -Wno-deprecated-declarations \
-		 -Wno-unknown-attributes
+		 -Wno-unknown-attributes \
+		 -Wno-unused-but-set-variable
 byedpi_LDFLAGS := -L$(THEOS_OBJ_DIR)
 byedpi_USE_MODULES := 0
 $(eval $(call abi_fix,byedpi))
